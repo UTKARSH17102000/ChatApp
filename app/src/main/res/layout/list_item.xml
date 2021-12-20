@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:focusable="true"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImgView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/defaultavatar"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+    <LinearLayout
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Utkarsh Goswami"
+                android:textColor="@android:color/black"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:text="7/2/21"
+                android:textColor="@android:color/black"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/subtitleTv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Hey there i am using Whatsapp"
+                android:textColor="@android:color/black"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/countTv"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_gravity="center"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:text="07/02/21"
+                android:background="@drawable/count_background"
+                android:visibility="visible"
+                tools:text="6"
+                android:textColor="@android:color/white"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
